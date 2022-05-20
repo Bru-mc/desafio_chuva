@@ -405,3 +405,11 @@ main{
     background: #E7E7E7;
     border-radius: 5px;
 }
+.current_bar{
+    position: absolute;
+    width: 3px;
+    height: 200px;
+    top: 0;
+    background: #BFBFBF;
+    border-radius: 5px;
+}
