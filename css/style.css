@@ -179,7 +179,7 @@ main{
     height: 1382px;
     left: 263px;
     top: 88px;
-    background-color: #ed39cf;
+    /* background-color: #ed39cf; */
 }
 
 .main_top_content{
@@ -239,4 +239,36 @@ main{
     line-height: 25px;
     letter-spacing: 0.05em;
     color: #ED7839;
+}
+.main_middle_FirstContent{
+    width: 100%;
+    display: flex;
+    margin-top: 19px;
+}
+.main_middle_FirstContent > .content{
+    position: relative;
+    max-width: 783px;
+    height: 439px;
+    background-color: #EE7A3A;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.main_middle_FirstContent > .content > .video_background{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/dewey1.png);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    z-index: 0;
+}
+.main_middle_FirstContent > .content > .video_overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(141, 53, 6, 0.5);
 }
