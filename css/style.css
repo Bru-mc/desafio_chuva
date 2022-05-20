@@ -182,14 +182,16 @@ main{
     height: 1382px;
     left: 263px;
     top: 88px;
-    /* background-color: #ed39cf; */
 }
 
 .main_top_content{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;  
     width: 100%;
+    padding-right: 44px;
+    box-sizing: border-box;
 }
 
 .project_title{
@@ -198,6 +200,7 @@ main{
     font-style: normal;
     font-weight: 900; 
     font-size: 20px;
+    line-height: 25px;
     letter-spacing: 0.05em;
     color: #ED7839;
 }
@@ -205,10 +208,10 @@ main{
     margin-left: 29px; 
     display: flex;
     flex-direction: column;
-    margin-right: 45px;
 }
 .top_buttons{
     display: flex;
+    padding-bottom: 10px;
 }
 .top_buttons button{
     display: flex;
@@ -246,11 +249,14 @@ main{
 .main_middle_FirstContent{
     width: 100%;
     display: flex;
-    margin-top: 19px;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding-right: 44px;
+    box-sizing: border-box;
 }
 .main_middle_FirstContent > .container{
     position: relative;
-    max-width: 783px;
+    width: 783px;
     height: 439px;
     background-color: #EE7A3A;
     border-radius: 3px;
@@ -336,7 +342,6 @@ main{
 }
 
 .details_content{
-    margin-left: 31px;
     width: 242px;
     height: 439px;
     border: 1px solid #ECECEC;
