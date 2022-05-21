@@ -5,17 +5,6 @@ const btnSeeMore = document.querySelector('.see_more');
 //Variavel para condição de fechamento
 let canCloseResume = false;
 
-//functions 
-const createParagraphsInElement = (textArray, element, className) =>{
-    textArray.forEach((text)=> {
-        const paragraph = document.createElement('p');
-        paragraph.appendChild(text);
-        if(className){
-            paragraph.className = className;
-        }
-        element.appendChild(paragraph);
-    }); 
-}
 //handler functions
 const seeMore = () =>{
     //criando um array para armazenar os textos
