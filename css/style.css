@@ -1,5 +1,5 @@
-body{
-    overflow: hidden;
+::-webkit-scrollbar {
+    width: 0px;
 }
 .side_menu{
     position: fixed;
@@ -412,4 +412,30 @@ main{
     top: 0;
     background: #BFBFBF;
     border-radius: 5px;
+}
+.main_middle_secondCotent{
+    padding-right: 44px;
+    padding-top: 30px;
+}
+.resume_content{
+    /* height: 189px; */
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+.resume_container{
+    padding: 15px;
+}
+.resume{
+    /* height: 114px; */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #5C5C5C;
+}
+.resume .see_more{
+    color: #ED7839;
+    font-weight: 600;
 }
