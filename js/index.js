@@ -27,6 +27,7 @@ const closeSeeMore = (event) =>{
     //verifica se o target do click não é o btn de ver mais e se temos permissão para fechar o container, voltar ao default 
     if(event.target.innerHTML !== btnSeeMore.innerHTML && canCloseResume === true){
         //reseta o innerHTML para o elemento antigo de antes de clicar no ver mais
+        console.log(event)
         resumeContainer.innerHTML = resumeContainerCopy.innerHTML;
         //reseta a permissão de fechar o ver mais para o estado inicial, que é false
         canCloseResume = false;
