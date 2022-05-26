@@ -19,13 +19,13 @@
 
 <body>
   <!-- Menu -->
-  <nav class="side-menu absolute">
-    <div class="side-menu__bar flex flex--column flex--align-center fixed">
-      <h1 class="side-menu__title font-roboto flex flex--align-center flex--justify-center">slaca 2019</h1>
-      <div class="side-menu__logo">
+  <nav class="side-menu close absolute">
+    <div class="side-menu__bar  flex flex--column flex--align-center fixed">
+      <h1 class="side-menu__title  font-roboto flex flex--align-center flex--justify-center">slaca 2019</h1>
+      <div class="side-menu__logo ">
         <img src="./assets/dewey4.png" alt="13 SLACA">
       </div>
-      <ul class="side-menu__pages">
+      <ul class="side-menu__pages ">
         <li class="side-menu__page font-quicksand flex flex--align-center">Apresentação</li>
         <li class="side-menu__page font-quicksand flex flex--align-center">Comitês</li>
         <li class="side-menu__page font-quicksand flex flex--align-center">Autores</li>
@@ -38,6 +38,9 @@
       </ul>
     </div>
   </nav>
+  
+  <button class="teste1 none flex--align-center fixed font-roboto" onclick="abrirMenu()">&gt</button>
+  <button class="teste2 none flex--align-center fixed font-roboto" onclick="fecharMenu()">&lt</button>
 
   <!-- Conteudo da pagina -->
   <div class="page_content">
@@ -49,22 +52,24 @@
         <h2 class="header__title">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h2>
         <p class="header__subtitle">ISSN: 1234-5678</p>
       </div>
-      <button class="header__btn-languages flex flex--justify-center flex--no-wrap">
-        <img class="header__btn-languages__img-languages" src="./assets/languageImage.png" alt="language">
-        <p class="header__btn-languages__text">PT, BR</p>
-        <img class="header__btn-languages__img-dropdown" src="./assets/dropdown.png" alt="dropdown">
-      </button>
-      <div class="header__login flex relative">
-        <div class="header__login__text-content font-quicksand">
-          <p class="header__login__text">Bem vindo!</p>
-          <p class="header__login__user-email">alguem12@galoascience.com</p>
-        </div>
-        <div class="header__login__user-img-container flex flex--align-center flex--justify-center circular">
-          <img class="header__login__user-img" src="./assets/image.png" alt="user photo">
-        </div>
-        <div class="header__login__user-notification flex flex--align-center flex--justify-center absolute">
-          <img class="header__login__notification-img absolute" src="./assets/basic.png" alt="notification background">
-          <p class="header__login__notification-number font-roboto absolute">2</p>
+      <div class="header__right-side flex">
+        <button class="header__btn-languages flex flex--justify-center flex--no-wrap">
+          <img class="header__btn-languages__img-languages" src="./assets/languageImage.png" alt="language">
+          <p class="header__btn-languages__text">PT, BR</p>
+          <img class="header__btn-languages__img-dropdown" src="./assets/dropdown.png" alt="dropdown">
+        </button>
+        <div class="header__login flex relative">
+          <div class="header__login__text-content font-quicksand">
+            <p class="header__login__text">Bem vindo!</p>
+            <p class="header__login__user-email">alguem12@galoascience.com</p>
+          </div>
+          <div class="header__login__user-img-container flex flex--align-center flex--justify-center circular">
+            <img class="header__login__user-img" src="./assets/image.png" alt="user photo">
+          </div>
+          <div class="header__login__user-notification flex flex--align-center flex--justify-center absolute">
+            <img class="header__login__notification-img absolute" src="./assets/basic.png" alt="notification background">
+            <p class="header__login__notification-number font-roboto absolute">2</p>
+          </div>
         </div>
       </div>
     </header>
@@ -100,7 +105,7 @@
             <div class="main-middle-top__video-content__bottom flex flex--align-end absolute">
               <div class="main-middle-top__icon-border flex flex--align-center flex--justify-center circular">
                 <div class="main-middle-top__icon-container flex flex--align-center flex--justify-center circular">
-                  <img src="./assets/image2.png" alt="image icon">
+                  <img class="main-middle-top__icon" src="./assets/image2.png" alt="image icon">
                 </div>
               </div>
               <div class="main-middle-top__video-content__bottom-text">

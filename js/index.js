@@ -1,7 +1,7 @@
 //Elementos
-const resumeContainer = document.querySelector('.resume_container');
+const resumeContainer = document.querySelector('.main-middle__resume-container');
 const resumeContainerCopy = resumeContainer.cloneNode(true);
-const btnSeeMore = document.querySelector('.see_more');
+const btnSeeMore = document.querySelector('.main-middle__see-more');
 //Variavel para condição de fechamento
 let canCloseResume = false;
 
@@ -33,3 +33,23 @@ const closeSeeMore = (event) =>{
         canCloseResume = false;
     }
 }
+const nav = document.querySelector('.close');
+const btnTeste2 = document.querySelector('.teste2');
+const btnTeste1 = document.querySelector('.teste1');
+
+const abrirMenu = () =>{
+  // nav.style.opacity = "100%";
+  nav.style.display = "flex";
+  nav.style.zIndex = "4";
+  btnTeste2.style.display = "flex";
+  // btnTeste2.zIndex = "5";
+  btnTeste1.style.display = "none";
+}
+
+const fecharMenu = () =>{  
+  nav.style.display = "none";
+  // nav.style.opacity = "0";
+  btnTeste2.style.display = "none";
+  btnTeste1.style.display = "flex";
+}
+

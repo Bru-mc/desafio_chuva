@@ -2,6 +2,8 @@
   width: 220px;
   height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background: #FFFFFF;
+  transition: all 0.2s ease;
 }
 .side-menu__bar{
   height: 536px;
@@ -16,8 +18,7 @@
   color: #FFFFFF;
 }
 .side-menu__logo{
-  max-width: 220px;
-  max-height: 258px;
+  width: 100%;
 }
 .side-menu__pages{
   width: 100%;
