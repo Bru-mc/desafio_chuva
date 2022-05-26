@@ -15,8 +15,48 @@ body {
   margin-left: 220px;
 }
 
+.font-roboto{
+  font-family: 'Roboto';
+  font-style: normal;
+}
+.font-quicksand{
+  font-family: 'Quicksand';
+  font-style: normal;
+}
+.font-segoe-ui{
+  font-family: 'Segoe UI';
+  font-style: normal;
+}
 
+.flex{
+  display: flex;
+}
+.flex--column{
+  flex-direction: column;
+}
+.flex--align-center{
+  align-items: center;
+}
+.flex--justify-center{
+  justify-content: center;
+}
+.flex--justify-space-between{
+  justify-content: center;
+}
+.flex--no-wrap{
+  flex-wrap: nowrap;
+}
 
+.circular{
+  border-radius: 100%;
+}
+
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
 /* main{
   margin-left: 44px;
   margin-top: 20px;

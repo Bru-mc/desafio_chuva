@@ -18,48 +18,53 @@
 </head>
 
 <body>
-  <nav class="side_menu">
-    <div class="side_bar">
-      <h1 class="event_name">slaca 2019</h1>
-      <div class="menu_item_logo">
+  <!-- Menu -->
+  <nav class="side-menu absolute">
+    <div class="side-menu__bar flex flex--column flex--align-center fixed">
+      <h1 class="side-menu__title font-roboto flex flex--align-center flex--justify-center">slaca 2019</h1>
+      <div class="side-menu__logo">
         <img src="./assets/dewey4.png" alt="13 SLACA">
       </div>
-      <ul class="menu_pages">
-        <li>Apresentação</li>
-        <li>Comitês</li>
-        <li>Autores</li>
-        <li>Eixos temáticos</li>
-        <li class="selected">
-          <div class="selected_left_border"></div>
+      <ul class="side-menu__pages">
+        <li class="side-menu__page font-quicksand flex flex--align-center">Apresentação</li>
+        <li class="side-menu__page font-quicksand flex flex--align-center">Comitês</li>
+        <li class="side-menu__page font-quicksand flex flex--align-center">Autores</li>
+        <li class="side-menu__page font-quicksand flex flex--align-center">Eixos temáticos</li>
+        <li class="side-menu__page side-menu__page--selected font-quicksand flex flex--align-center">
+          <div class="side-menu__page__left-border"></div>
           Trabalhos
         </li>
-        <li>Contato</li>
+        <li class="side-menu__page font-quicksand flex flex--align-center">Contato</li>
       </ul>
     </div>
   </nav>
+
+  <!-- Conteudo da pagina -->
   <div class="page_content">
-    <header>
-      <div class="header_text_content">
-        <p class="header_description">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-        <h2 class="header_title">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h2>
-        <p class="header_subtitle">ISSN: 1234-5678</p>
+
+    <!-- Header -->
+    <header class="flex flex--align-center flex--justify-space-between">
+      <div class="header__text-content font-roboto">
+        <p class="header__description">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+        <h2 class="header__title">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h2>
+        <p class="header__subtitle">ISSN: 1234-5678</p>
       </div>
-      <button class="btn_languages">
-        <img class="img_languages" src="./assets/languageImage.png" alt="language">
-        <p>PT, BR</p>
-        <img class="img_dropdown" src="./assets/dropdown.png" alt="dropdown">
+      <button class="header__btn-languages flex flex--justify-center flex--no-wrap">
+        <img class="header__btn-languages__img-languages" src="./assets/languageImage.png" alt="language">
+        <p class="header__btn-languages__text">PT, BR</p>
+        <img class="header__btn-languages__img-dropdown" src="./assets/dropdown.png" alt="dropdown">
       </button>
-      <div class="header_login">
-        <div class="header_login_text">
-          <p>Bem vindo!</p>
-          <p class="user_email">alguem12@galoascience.com</p>
+      <div class="header__login flex">
+        <div class="header__login__text-content font-quicksand">
+          <p class="header__login__text">Bem vindo!</p>
+          <p class="header__login__user-email">alguem12@galoascience.com</p>
         </div>
-        <div class="user_img">
-          <img src="./assets/image.png" alt="user photo">
+        <div class="header__login__user-img-container flex flex--align-center flex--justify-center circular">
+          <img class="header__login__user-img" src="./assets/image.png" alt="user photo">
         </div>
-        <div class="user_notification">
-          <img src="./assets/basic.png" alt="notification background">
-          <p>2</p>
+        <div class="header__login__user-notification flex flex--align-center flex--justify-center absolute">
+          <img class="header__login__notification-img absolute" src="./assets/basic.png" alt="notification background">
+          <p class="header__login__notification-number font-roboto absolute">2</p>
         </div>
       </div>
     </header>
@@ -68,8 +73,7 @@
     <main>
       <div class="main_top_content">
         <div class="top_text_content">
-          <p class="project_title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
-            15
+          <p class="project_title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
             anos, do município de Campinas/SP </p>
         </div>
         <div class="top_right_content">
