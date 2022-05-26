@@ -67,7 +67,10 @@ header{
   height: 30px;
 }
 .header__login__user-notification{
-  right: 37.85px;
+  right: -2px;
+  top: -2px;
+  width: 12px;
+  height: 12px;
 }
 .header__login__notification-number{
   font-weight: 700;
