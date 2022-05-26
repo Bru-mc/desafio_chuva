@@ -37,18 +37,21 @@ body {
 .flex--align-center{
   align-items: center;
 }
+.flex--align-end{
+  align-items: flex-end;
+}
 .flex--justify-center{
   justify-content: center;
 }
 .flex--justify-space-between{
-  justify-content: center;
+  justify-content: space-between;
 }
 .flex--no-wrap{
   flex-wrap: nowrap;
 }
 
 .circular{
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .absolute{
@@ -56,6 +59,16 @@ body {
 }
 .fixed{
   position: fixed;
+}
+.relative{
+  position: relative;
+}
+
+.bolder{
+  font-weight: 700;
+}
+.lighter{
+  color: #b7acac;
 }
 /* main{
   margin-left: 44px;

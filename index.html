@@ -70,82 +70,79 @@
     </header>
 
     <!-- main -->
-    <main>
-      <div class="main_top_content">
-        <div class="top_text_content">
-          <p class="project_title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
+    <main class="flex flex--column">
+      <div class="main-top-content flex flex--justify-space-between flex--no-wrap">
+        <p class="main-top-content__project-title font-roboto">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
             anos, do município de Campinas/SP </p>
-        </div>
-        <div class="top_right_content">
-          <div class="top_buttons">
-            <button class="btn_download">
-              <img src="./assets/download.png" alt="Download">
+        <div class="main-top-content__right-content flex flex--column">
+          <div class="main-top-content__buttons flex">
+            <button class="main-top-content__button main-top-content__btn-download font-roboto">
+              <img class="main-top-content__img-download" src="./assets/download.png" alt="Download">
               Download
             </button>
-            <button class="btn_favorite">
+            <button class="main-top-content__button main-top-content__btn-favorite">
               <img src="./assets/favoritar.png" alt="favorite">
             </button>
-            <button class="btn_doi">
+            <button class="main-top-content__button main-top-content__btn-doi">
               <img src="./assets/doi.png" alt="doi">
             </button>
           </div>
-          <p class="quote">COMO CITAR ESSE TRABALHO?</p>
+          <p class="main-top-content__quote font-roboto">COMO CITAR ESSE TRABALHO?</p>
         </div>
       </div>
-      <div class="main_middle_FirstContent">
-        <div class="container">
-          <div class="video_background"></div>
-          <div class="video_overlay"></div>
-          <div class="content">
-            <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
-              município
-              de Campinas/SP</h1>
-              <div class="bottom_content">
-                <div class="icon_border">
-                  <div class="img_icon">
-                    <img src="./assets/image2.png" alt="image icon">
-                  </div>
-                </div>
-                <div class="container">
-                  <h1>Beatriz Christiane Melo</h1>
-                  <p>FCA / Universidade Estadual de Campinas</p>
+      <div class="main-middle-top flex flex--justify-space-between">
+        <div class="main-middle-top__video-container relative">
+          <img class="main-middle-top__video-background-img" src="./assets/dewey1.png" alt="background">
+          <div class="main-middle-top__video-overlay flex absolute"></div>
+          <div class="main-middle-top__video-content font-roboto absolute">
+            <h2 class="main-middle-top__video-content__h2">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
+              município de Campinas/SP</h2>
+            <div class="main-middle-top__video-content__bottom flex flex--align-end absolute">
+              <div class="main-middle-top__icon-border flex flex--align-center flex--justify-center circular">
+                <div class="main-middle-top__icon-container flex flex--align-center flex--justify-center circular">
+                  <img src="./assets/image2.png" alt="image icon">
                 </div>
               </div>
+              <div class="main-middle-top__video-content__bottom-text">
+                <h1 class="main-middle-top__video-content__bottom-h1">Beatriz Christiane Melo</h1>
+                <p class="main-middle-top__video-content__bottom-p">FCA / Universidade Estadual de Campinas</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="details_content">
-          <h2 class="h2_title">Detalhes</h2>
-          <div class="container">
-            <ul class="details_content_description">
-              <li>Tipo de Apresentação: <span class="bolder">Pôster</span></li>
-              <li>Eixo temático: <span class="bolder">Alimentação e saúde (AS)</span></li>
-              <li>Palavras-chaves: <span class="bolder">Alimentos funcionais, alimentação escolar.</span></li>
+        <div class="main-middle-top__details-content">
+          <h2 class="main-h2-title">Detalhes</h2>
+          <div class="main-middle-top__details-container font-quicksand">
+            <ul class="main-middle-top__details-content-description">
+              <li class="main-middle-top__details-description">Tipo de Apresentação: <span class="bolder">Pôster</span></li>
+              <li class="main-middle-top__details-description">Eixo temático: <span class="bolder">Alimentação e saúde (AS)</span></li>
+              <li class="main-middle-top__details-description">Palavras-chaves: <span class="bolder">Alimentos funcionais, alimentação escolar.</span></li>
             </ul>
-            <ul class="details_content_authors">
-              <li class="bolder">Autores:</li>
-              <li>Galileo Galilei<span class="lighter">¹</span></li>
-              <li>Berta Lange de Morretes<span class="lighter">²</span></li>
-              <li>Isaac Newton<span class="lighter">³</span></li>
-              <li>Cesar Lattes<span class="lighter">¹</span></li>
-              <li>Stephen Hawking<span class="lighter">⁴</span></li>
+            <ul class="main-middle-top__details-content-authors">
+              <li class="main-middle-top__details-authors-li bolder">Autores:</li>
+              <li class="main-middle-top__details-authors-li">Galileo Galilei<span class="lighter">¹</span></li>
+              <li class="main-middle-top__details-authors-li">Berta Lange de Morretes<span class="lighter">²</span></li>
+              <li class="main-middle-top__details-authors-li">Isaac Newton<span class="lighter">³</span></li>
+              <li class="main-middle-top__details-authors-li">Cesar Lattes<span class="lighter">¹</span></li>
+              <li class="main-middle-top__details-authors-li">Stephen Hawking<span class="lighter">⁴</span></li>
             </ul>
-            <ul class="details_content_references">
-              <li class="lighter">¹Universidade Estadual de Campinas</li>
-              <li class="lighter">²Universidade de São Paul</li>
-              <li class="lighter">³Instituto Nacional de Pesquisas Espaciais</li>
-              <li class="lighter">⁴Universidade Federal do Rio de Janeiro</li>
+            <ul class="main-middle-top__details-references">
+              <li class="main-middle-top__details-reference lighter">¹Universidade Estadual de Campinas</li>
+              <li class="main-middle-top__details-reference lighter">²Universidade de São Paul</li>
+              <li class="main-middle-top__details-reference lighter">³Instituto Nacional de Pesquisas Espaciais</li>
+              <li class="main-middle-top__details-reference lighter">⁴Universidade Federal do Rio de Janeiro</li>
             </ul>
-            <div class="details_scroll">
-              <div class="current_bar"></div>
+            <div class="main-middle-top__details-scroll absolute">
+              <div class="main-middle-top__details-current-bar absolute"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main_middle_secondCotent">
-        <div class="resume_content" onclick="closeSeeMore(event)">
-          <h2 class="h2_title">Resumo</h2>
-          <div class="resume_container">
-            <p class="resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
+      <div class="main-middle">
+        <div class="main-middle__resume-content" onclick="closeSeeMore(event)">
+          <h2 class="main-h2-title">Resumo</h2>
+          <div class="main-middle__resume-container">
+            <p class="main-middle__resume font-quicksand">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
               turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus
               et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum
               nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
@@ -154,20 +151,20 @@
               Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
               sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum
               nisl, vel aliquet enim accumsan sit ametl accumsant...
-              <span class="see_more" onclick="seeMore()">ver mais</span>
+              <span class="main-middle__see-more" onclick="seeMore()">ver mais</span>
             </p>
           </div>
         </div>
-        <div class="discussions_content">
-          <h2 class="h2_title">Discussões</h2>
-          <div class="discussions_container">
-            <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
-            <div class="icons">
+        <div class="main-middle__discussions-content">
+          <h2 class="main-h2-title">Discussões</h2>
+          <div class="main-middle__discussions-container flex flex--column flex--align-center relative">
+            <h3 class="main-middle__h3 font-roboto">Compartilhe suas ideias ou dúvidas com os autores!</h3>
+            <div class="main-middle__discussions-icons flex flex--justify-space-between">
               <img src="assets/icone1.png" alt="icon">
               <img src="assets/icone2.png" alt="icon">
               <img src="assets/icone3.png" alt="icon">
             </div>
-            <p class="message">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
+            <p class="main-middle__discussions-p message">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
               Deixe
               seus questionamentos ou sugestões para o autor!</p>
             <div class="divider"></div>
