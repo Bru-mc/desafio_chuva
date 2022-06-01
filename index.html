@@ -19,7 +19,7 @@
 
 <body>
   <!-- Menu -->
-  <nav class="side-menu close absolute">
+  <nav class="side-menu close fixed">
     <div class="side-menu__bar  flex flex--column flex--align-center fixed">
       <h1 class="side-menu__title  font-roboto flex flex--align-center flex--justify-center">slaca 2019</h1>
       <div class="side-menu__logo ">
@@ -38,7 +38,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <button class="teste1 none flex--align-center fixed font-roboto" onclick="abrirMenu()">&gt</button>
   <button class="teste2 none flex--align-center fixed font-roboto" onclick="fecharMenu()">&lt</button>
 
@@ -67,18 +67,20 @@
             <img class="header__login__user-img" src="./assets/image.png" alt="user photo">
           </div>
           <div class="header__login__user-notification flex flex--align-center flex--justify-center absolute">
-            <img class="header__login__notification-img absolute" src="./assets/basic.png" alt="notification background">
+            <img class="header__login__notification-img absolute" src="./assets/basic.png"
+              alt="notification background">
             <p class="header__login__notification-number font-roboto absolute">2</p>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- main -->
+    <!-- Main -->
     <main class="flex flex--column">
       <div class="main-top-content flex flex--justify-space-between flex--no-wrap">
-        <p class="main-top-content__project-title font-roboto">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
-            anos, do município de Campinas/SP </p>
+        <p class="main-top-content__project-title font-roboto">Análise sensorial de preparações funcionais desenvolvidas
+          para escolares entre 09 e 15
+          anos, do município de Campinas/SP </p>
         <div class="main-top-content__right-content flex flex--column">
           <div class="main-top-content__buttons flex">
             <button class="main-top-content__button main-top-content__btn-download font-roboto">
@@ -100,7 +102,8 @@
           <img class="main-middle-top__video-background-img" src="./assets/dewey1.png" alt="background">
           <div class="main-middle-top__video-overlay flex absolute"></div>
           <div class="main-middle-top__video-content font-roboto absolute">
-            <h2 class="main-middle-top__video-content__h2">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
+            <h2 class="main-middle-top__video-content__h2">Análise sensorial de preparações funcionais desenvolvidas
+              para escolares entre 09 e 15 anos, do
               município de Campinas/SP</h2>
             <div class="main-middle-top__video-content__bottom flex flex--align-end absolute">
               <div class="main-middle-top__icon-border flex flex--align-center flex--justify-center circular">
@@ -119,9 +122,12 @@
           <h2 class="main-h2-title">Detalhes</h2>
           <div class="main-middle-top__details-container font-quicksand">
             <ul class="main-middle-top__details-content-description">
-              <li class="main-middle-top__details-description">Tipo de Apresentação: <span class="bolder">Pôster</span></li>
-              <li class="main-middle-top__details-description">Eixo temático: <span class="bolder">Alimentação e saúde (AS)</span></li>
-              <li class="main-middle-top__details-description">Palavras-chaves: <span class="bolder">Alimentos funcionais, alimentação escolar.</span></li>
+              <li class="main-middle-top__details-description">Tipo de Apresentação: <span class="bolder">Pôster</span>
+              </li>
+              <li class="main-middle-top__details-description">Eixo temático: <span class="bolder">Alimentação e saúde
+                  (AS)</span></li>
+              <li class="main-middle-top__details-description">Palavras-chaves: <span class="bolder">Alimentos
+                  funcionais, alimentação escolar.</span></li>
             </ul>
             <ul class="main-middle-top__details-content-authors">
               <li class="main-middle-top__details-authors-li bolder">Autores:</li>
@@ -147,7 +153,8 @@
         <div class="main-middle__resume-content" onclick="closeSeeMore(event)">
           <h2 class="main-h2-title">Resumo</h2>
           <div class="main-middle__resume-container">
-            <p class="main-middle__resume font-quicksand">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
+            <p class="main-middle__resume font-quicksand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus vitae
               turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus
               et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum
               nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
@@ -169,11 +176,13 @@
               <img src="assets/icone2.png" alt="icon">
               <img src="assets/icone3.png" alt="icon">
             </div>
-            <p class="main-middle__discussions-p main-middle__discussions-message">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
+            <p class="main-middle__discussions-p main-middle__discussions-message">Sabia que o maior estímulo no
+              desenvolvimento científico e cultural é a curiosidade?
               Deixe seus questionamentos ou sugestões para o autor!</p>
             <div class="main-middle__discussions-create-topic">
               <div class="main-middle__divider"></div>
-              <button class="main-middle__btn-create-topic font-quicksand flex flex--align-center flex--justify-center absolute">
+              <button
+                class="main-middle__btn-create-topic font-quicksand flex flex--align-center flex--justify-center absolute">
                 <img class="main-middle__icon-create" src="assets/iconCriar.png" alt="icon">
                 criar tópico
               </button>
@@ -181,13 +190,15 @@
             <div class="main-middle__card-topic">
               <h3 class="main_middle__card-question_title font-quicksand">Assunto da pergunta aparece aqui</h3>
               <h5 class="main_middle__card-author-username font-quicksand">Carlos Henrique Santos</h5>
-              <p class="main-middle__discussions-p main_middle__card-content font-quicksand">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
+              <p class="main-middle__discussions-p main_middle__card-content font-quicksand">Comecinho da pergunta
+                aparece aqui resente relato inscreve-se no campo da análise
                 da dimensão e impacto de processo formativo situado impacto de processo formativo processo<span
                   class="dots">...</span>
               </p>
               <div class="main_middle__card-footer flex flex--justify-space-between">
                 <img src="./assets/maisInformacoes.png" alt="mais informações" class="more_info_icon">
-                <button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img src="./assets/like.png" alt="like"></button>
+                <button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img
+                    src="./assets/like.png" alt="like"></button>
                 <p class="main_middle__card-footer__p .font-segoe-ui">1 like</p>
                 <p class="main_middle__card-footer__p .font-segoe-ui">1 resposta</p>
               </div>
@@ -195,13 +206,15 @@
             <div class="main-middle__card-topic">
               <h3 class="main_middle__card-question_title font-quicksand">Assunto da pergunta aparece aqui</h3>
               <h5 class="main_middle__card-author-username font-quicksand">Carlos Henrique Santos</h5>
-              <p class="main-middle__discussions-p main_middle__card-content font-quicksand">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
+              <p class="main-middle__discussions-p main_middle__card-content font-quicksand">Comecinho da pergunta
+                aparece aqui resente relato inscreve-se no campo da análise
                 da dimensão e impacto de processo formativo situado impacto de processo formativo processo<span
                   class="dots">...</span>
               </p>
               <div class="main_middle__card-footer flex flex--justify-space-between">
                 <img src="./assets/maisInformacoes.png" alt="mais informações" class="more_info_icon">
-                <button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img src="./assets/like.png" alt="like"></button>
+                <button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img
+                    src="./assets/like.png" alt="like"></button>
                 <p class="main_middle__card-footer__p .font-segoe-ui">1 like</p>
                 <p class="main_middle__card-footer__p .font-segoe-ui">1 resposta</p>
               </div>
@@ -210,6 +223,11 @@
         </div>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <img class="footer__img" src="./assets/imagemFooter.png" alt="footer">
+    </footer>
   </div>
   <script src="./js/utils.js"></script>
   <script src="./js/index.js"></script>
