@@ -201,12 +201,15 @@ body {
     justify-content: space-between;
   }
   .main-top-content {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .main-top-content__right-content{
     margin-top: 20px;
     margin-bottom: 15px;
+    margin-left: 0px !important;
   }
+  
 }
 @media screen and (max-width: 767px) and (min-width: 550px){
   .main-middle-top__video-content__h2{
@@ -256,4 +259,10 @@ body {
     height: 38.1139px !important;
     width: 36.1387px !important;
   }
+  .header__right-side{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+  }
+  
 }
