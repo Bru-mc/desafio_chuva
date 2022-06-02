@@ -53,6 +53,8 @@ main{
   padding-right: 44px;
   box-sizing: border-box;
 }
+
+/*Video*/
 .main-middle-top__video-container{
   margin-right: 31px;
   max-width: 783px;
@@ -119,6 +121,7 @@ main{
   margin-left: 2px;
 }
 
+/*Details*/
 .main-middle-top__details-content{
   width: 242px;
   border: 1px solid #ECECEC;
@@ -180,12 +183,14 @@ main{
   background: #BFBFBF;
   border-radius: 5px;
 }
+
 .main-middle{
   padding-right: 44px;
   padding-top: 30px;
 }
+
+/* Resume */ 
 .main-middle__resume-content{
-  /* height: 189px; */
   border: 1px solid #ECECEC;
   border-radius: 3px;
 }
@@ -202,22 +207,74 @@ main{
 .main-middle__resume:nth-child(n+2){
   padding-top: 35px;
 }
-
 .main-middle__see-more{
   color: #ED7839;
   font-weight: 600;
 }
+
+/* Discussions */
 .main-middle__discussions-content{
   margin-top: 30px;
   border: 1px solid #ECECEC;
   border-radius: 3px;
 }
-
 .main-middle__discussions-container{
   padding: 15px;
   box-sizing: border-box;
 }
-/**/
+.main-middle__h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ED7839;
+}
+.main-middle__discussions-icons{
+  margin-top: 27px;
+  margin-bottom: 35.06px;
+  max-width: 256.26px;
+}
+.main-middle__discussions-p{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #595959;
+}
+.main-middle__discussions-message{
+  max-width:630px;
+  text-align: center;
+  margin-bottom: 31px; 
+}
+.main-middle__discussions-create-topic{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 30px);
+}
+.main-middle__divider{
+  width: 100%;
+  border: 1px solid #E7E7E7;
+}
+.main-middle__btn-create-topic{
+  position: absolute;
+  width: 133px;
+  height: 32px;
+  border: none;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.main-middle__icon-create{
+  margin-right: 6px;
+}
+
+/*Discussions Form*/
 .main-middle__discussions-initial-content{
   width: 100%;
 }
@@ -279,58 +336,58 @@ main{
   line-height: 16px;
   color: #FFFFFF;
 }
-/**/
-.main-middle__h3{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ED7839;
+
+
+/*Submitted*/
+.main-middle__discussions-submitted-p{
+  margin-top: 18px !important;
+  margin-bottom: 29px !important;
 }
-.main-middle__discussions-icons{
-  margin-top: 27px;
-  margin-bottom: 35.06px;
-  max-width: 256.26px;
-}
-.main-middle__discussions-p{
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
+.main-middle__discussions-a{
+  font-weight: 450;
   font-size: 14px;
-  line-height: 19px;
-  color: #595959;
-}
-.main-middle__discussions-message{
-  max-width:630px;
+  line-height: 137.5%;
   text-align: center;
-  margin-bottom: 31px; 
+  color: #F48F44;
 }
-.main-middle__discussions-create-topic{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 30px);
+.main-middle__discussions-create-new-topic{
+  margin-top: 65px;
 }
-.main-middle__divider{
+.main-middle__btn-create-new-topic{
+  width: 235.15px !important;
+}
+.main-middle__discussions-submitted__card-topic--in-process{
+  margin-top: 28px;
+}
+.main-middle__discussions-submitted__card-topic-overlay{
+  z-index: 2;
   width: 100%;
+  height: 100%;
   border: 1px solid #E7E7E7;
-}
-.main-middle__btn-create-topic{
-  position: absolute;
-  width: 133px;
-  height: 32px;
-  border: none;
-  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 16px;
-  color: #FFFFFF;
 }
-.main-middle__icon-create{
-  margin-right: 6px;
+.main-middle__card-topic-overlay__icon{
+  width: fit-content;
 }
+.main-middle__card-topic-overlay__h3{
+  margin-top: 7.78px;
+  margin-bottom: 8px;
+  color: #707070 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+.main-middle__discussions-submitted__card-topic{
+  z-index: 1;
+  margin-top: 0 !important;
+  padding-bottom: 36px !important;
+  background: #DDDDDD !important;
+  filter: blur(2px);
+  opacity: 0.3;
+}
+
+
+/*Cards*/
 .main-middle__card-topic{
   padding: 17px 23.17px 18px 24.17px;
   background: #FFFFFF;
@@ -339,7 +396,6 @@ main{
   border-radius: 4px;
   margin-top: 30px;
 }
-
 .main_middle__card-question_title{
   font-weight: 700;
   font-size: 16px;

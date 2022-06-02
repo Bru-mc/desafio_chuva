@@ -7,6 +7,7 @@ const btnSeeMore = document.querySelector('.main-middle__see-more');
 //Variavel para condição de fechamento
 let canCloseResume = false;
 let canCloseDiscussionForm = false;
+let canCloseTopicSubmitted = false;
 
 
 const discussionForm = `<p class="main-middle__discussions-p main-middle__discussions-form-p">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
@@ -20,10 +21,37 @@ const discussionForm = `<p class="main-middle__discussions-p main-middle__discus
       <img class="main-middle__discussions-form__icons" src="./assets/Shape.png" alt="bolder">
       <img class="main-middle__discussions-form__icons" src="./assets/Shape2.png" alt="italic">
     </div>
-    <input class="main-middle__discussions-form__btnSubmit font-quicksand"type="submit" value="Enviar">
+    <input class="main-middle__discussions-form__btnSubmit font-quicksand"type="submit" value="Enviar" onclick="submitTopic()">
   </div>
 </form>
 <div class="main-middle__divider"></div>`;
+
+const topicSubmitted = `<h3 class="main-middle__h3 font-roboto">Seu tópico foi enviado com sucesso! :D</h3>
+<p class="main-middle__discussions-p main-middle__discussions-submitted-p">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+<a class="main-middle__discussions-a font-quicksand" href="">Descubra outros trabalhos!</a>
+<div class="main-middle__discussions-create-topic main-middle__discussions-create-new-topic">
+  <div class="main-middle__divider"></div>
+  <button
+    class="main-middle__btn-create-topic main-middle__btn-create-new-topic font-quicksand flex flex--align-center flex--justify-center absolute" onclick="openCreateTopic()">
+    criar novo tópico
+  </button>
+</div>
+<div class="main-middle__discussions-submitted__card-topic--in-process relative">
+  <div class="main-middle__discussions-submitted__card-topic-overlay flex flex--column flex--align-center flex--justify-center absolute">
+    <img class="main-middle__card-topic-overlay__icon" src="./assets/doubleChecked.png" alt="checked">
+    <h3 class="main-middle__h3 main-middle__card-topic-overlay__h3 font-quicksand">Aguardando feedback dos autores</h3>
+    <a class="main-middle__discussions-a font-segoe-ui" href="">Editar tópico</a>
+  </div>
+  <div class="main-middle__card-topic main-middle__discussions-submitted__card-topic">
+    <h3 class="main_middle__card-question_title font-quicksand">Assunto da pergunta aparece aqui</h3>
+    <h5 class="main_middle__card-author-username font-quicksand">Carlos Henrique Santos</h5>
+    <p class="main-middle__discussions-p main_middle__card-content font-quicksand">Comecinho da pergunta
+      aparece aqui resente relato inscreve-se no campo da análise
+      da dimensão e impacto de processo formativo situado impacto de processo formativo processo<span
+        class="dots">...</span>
+    </p>
+  </div>
+</div>`
 
 //handler functions
 const seeMore = () =>{
@@ -45,6 +73,11 @@ const seeMore = () =>{
 const openCreateTopic = () =>{
   discussionInitialContent.innerHTML = discussionForm;
   canCloseDiscussionForm = true;
+}
+const submitTopic = () =>{
+  discussionInitialContent.innerHTML = topicSubmitted;
+  canCloseDiscussionForm = false;
+  canCloseTopicSubmitted = true;
 }
 
 
