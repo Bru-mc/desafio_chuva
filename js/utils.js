@@ -8,8 +8,3 @@ const createParagraphsInElement = (textArray, element, className) =>{
     element.appendChild(paragraph);
   }); 
 }
-// const createElementsInElement = (objElements, element) =>{
-//   Object.keys(objElements).forEach((key)=>{
-
-//   })
-// }
