@@ -1,9 +1,29 @@
 //Elementos
 const resumeContainer = document.querySelector('.main-middle__resume-container');
 const resumeContainerCopy = resumeContainer.cloneNode(true);
+const discussionInitialContent = document.querySelector('.main-middle__discussions-initial-content');
+const discussionInitialContentCopy = discussionInitialContent.cloneNode(true);
 const btnSeeMore = document.querySelector('.main-middle__see-more');
 //Variavel para condição de fechamento
 let canCloseResume = false;
+let canCloseDiscussionForm = false;
+
+
+const discussionForm = `<p class="main-middle__discussions-p main-middle__discussions-form-p">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+<form class="main-middle__discussions-form flex flex--column">
+  <label class="main-middle__discussions-form__label" for="issue">Assunto</label>
+  <input class="main-middle__discussions-form__input" type="text" id="form-issue" name="issue" value="Defina um tópico sucinto para notificar os autores...">
+  <label class="main-middle__discussions-form__label" for="content">Conteúdo</label>
+  <input class="main-middle__discussions-form__input" type="text" id="form-content" name="content">
+  <div class="main-middle__discussions-form__buttons flex flex--align-center flex--justify-space-between">
+    <div class="flex">
+      <img class="main-middle__discussions-form__icons" src="./assets/Shape.png" alt="bolder">
+      <img class="main-middle__discussions-form__icons" src="./assets/Shape2.png" alt="italic">
+    </div>
+    <input class="main-middle__discussions-form__btnSubmit font-quicksand"type="submit" value="Enviar">
+  </div>
+</form>
+<div class="main-middle__divider"></div>`;
 
 //handler functions
 const seeMore = () =>{
@@ -22,7 +42,13 @@ const seeMore = () =>{
   //dando permissão para fechar o container do ver mais
   canCloseResume = true;
 }
+const openCreateTopic = () =>{
+  discussionInitialContent.innerHTML = discussionForm;
+  canCloseDiscussionForm = true;
+}
 
+
+//verifica o array buttonsOpen, se o target tiver incluido nesse objeto, a function close desconsidera
 const closeSeeMore = (event) =>{
     //verifica se o target do click não é o btn de ver mais e se temos permissão para fechar o container, voltar ao default 
     if(event.target.innerHTML !== btnSeeMore.innerHTML && canCloseResume === true){

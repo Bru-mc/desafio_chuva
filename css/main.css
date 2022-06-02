@@ -217,6 +217,69 @@ main{
   padding: 15px;
   box-sizing: border-box;
 }
+/**/
+.main-middle__discussions-initial-content{
+  width: 100%;
+}
+.main-middle__discussions-form{
+  width: 100%;
+}
+.main-middle__discussions-form-p{
+  margin-bottom: 22px;
+}
+.main-middle__discussions-form__label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ED7839;
+  padding-bottom: 4px;
+}
+.main-middle__discussions-form__input{
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+#form-issue{
+  margin-bottom: 10px;
+  height: 39px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4D4D4D; 
+  padding-left: 2%;
+}
+#form-content{
+  border-bottom: none;
+  height: 82px;
+}
+.main-middle__discussions-form__buttons{
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #CCCCCC;
+  background: #EAF1F2;
+  height: 31px;
+  padding-left: 2.7%;
+  margin-bottom: 15px;
+}
+.main-middle__discussions-form__icons{
+  margin-right: 30.84px;
+}
+.main-middle__discussions-form__btnSubmit{
+  height: 100%;
+  width: 205px;
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  border-radius: 0px 0px 4px 0px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+/**/
 .main-middle__h3{
   font-weight: 700;
   font-size: 18px;
