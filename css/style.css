@@ -91,7 +91,7 @@ body {
 }
 
 .bolder{
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .lighter{
   color: #b7acac;

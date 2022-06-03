@@ -58,54 +58,66 @@ const topicSubmitted = `<h3 class="main-middle__h3 font-roboto">Seu tópico foi 
   </div>
 </div>`
 
-const cardComments = `<p class="main-middle__discussions-p main_middle__card-content font-quicksand">
+const cardComments = `<p class="main_middle__card-content-p font-quicksand">
 Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
 formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e 
 impacto de processo formativo situado impacto de processo formativo processo?
 </p>
+
 <div class="main_middle__card-footer flex flex--justify-space-between">
-<img src="./assets/maisInformacoes.png" alt="mais informações" class="more_info_icon">
-<button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img src="./assets/like.png" alt="like"></button>
-<p class="main_middle__card-footer__p .font-segoe-ui">4 likes</p>
-<p class="main_middle__card-footer__p .font-segoe-ui">4 respostas</p>
+  <img src="./assets/maisInformacoes.png" alt="mais informações" class="more_info_icon">
+  <button class="main_middle__btn-like flex flex--align-center flex--justify-center"><img src="./assets/like.png" alt="like"></button>
+  <p class="main_middle__card-footer__p .font-segoe-ui">4 likes</p>
+  <p class="main_middle__card-footer__p .font-segoe-ui">4 respostas</p>
 </div>
-<div>
-<div class="flex">
-  <h5 class="main_middle__card-author-username font-quicksand">Adriano da Silva</h5>
-  <span>Autor</span>
-  <img src="./assets/doublecheckorange.png" alt="doublecheck">
-</div>
-<p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se
-   no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
-</div>
-<div>
-<div class="flex">
-  <h5 class="main_middle__card-author-username font-quicksand white">Carlos Henrique Santos</h5>
-</div>
-<p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
 
-  Obrigada pela resposta, muito interessante o seu trabalho! </p>
-</div>
-<div>
-<div class="flex">
-  <h5 class="main_middle__card-author-username font-quicksand">Carmila Ferreira Andrade</h5>
-  <span>Coautor</span>
-  <img src="./assets/doublecheckorange.png" alt="doublecheck">
-</div>
-<p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+<div class="main-middle__card-comments">
+  <div class="main_middle__card-comment-container flex flex--column flex--justify-center">
+    <div class="flex flex--justify-space-between">
+      <h5 class="main_middle__card-author-username bolder font-quicksand bolder">Adriano da Silva</h5>
+      <div class="flex">
+        <span class="main_middle__card-author-type">Autor</span>
+        <img class="main_middle__card-check-icon" src="./assets/doublecheckorange.png" alt="doublecheck">
+      </div>
+    </div>
+    <p class="main_middle__card-content-p font-quicksand">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se
+     no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+  </div>
 
-  Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo 
-  formativo processo.</p>
-</div>
-<div>
-<div class="flex">
-  <h5 class="main_middle__card-author-username font-quicksand">Ana Carolina</h5>
-  <span>Coautor</span>
-  <img src="./assets/doublecheckorange.png" alt="doublecheck">
-</div>
-<p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo 
-formativo processo.</p>
-</div> `
+  <div class="main_middle__card-comment-container flex flex--column flex--justify-center">
+    <div>
+      <h5 class="main_middle__card-author-username font-quicksand bolder white">Carlos Henrique Santos</h5>
+    </div>
+    <p class="main_middle__card-content-p font-quicksand">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.</p>
+    <p class="main_middle__card-content-p font-quicksand">Obrigada pela resposta, muito interessante o seu trabalho! </p>
+  </div>
+
+  <div class="main_middle__card-comment-container flex flex--column flex--justify-center">
+    <div class="flex flex--justify-space-between">
+      <h5 class="main_middle__card-author-username font-quicksand bolder">Carmila Ferreira Andrade</h5>
+      <div class="flex">
+        <span class="main_middle__card-author-type">Coautor</span>
+        <img class="main_middle__card-check-icon" src="./assets/doublecheckorange.png" alt="doublecheck">
+      </div>
+    </div>
+    <p class="main_middle__card-content-p font-quicksand">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo 
+    formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+    <p class="main_middle__card-content-p font-quicksand">Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo 
+      formativo processo.</p>
+  </div>
+
+  <div class="main_middle__card-comment-container flex flex--column flex--justify-center">
+    <div class="flex flex--justify-space-between">
+      <h5 class="main_middle__card-author-username font-quicksand bolder">Ana Carolina</h5>
+      <div class="flex">
+        <span class="main_middle__card-author-type">Coautor</span>
+        <img class="main_middle__card-check-icon" src="./assets/doublecheckorange.png" alt="doublecheck">
+      </div>
+    </div>
+    <p class="main_middle__card-content-p font-quicksand">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo 
+    formativo processo.</p>
+  </div>
+</div>`
 
 //handler functions
 const seeMore = () =>{
